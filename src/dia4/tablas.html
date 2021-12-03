@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 4 - Tablas</title>
+</head>
+<body>
+    <!-- etiqueta para tablas -->
+    <table border="1" bgcolor="B4D6ED">
+        <!-- una tabla esta compuesta por una cabesera y un cuerpo -->
+        <!-- existe el table header -->
+        <thead>
+            <!-- thead es el contenedor de mi cabecera -->
+            <!-- para definir los elementos de mi cabecera deben esttar dentro de una fila -->
+            <tr>
+                <!-- una fila esta compuesta por una o varios elementos -->
+                <!-- para definir un elemento debe estar dentro de una celda -->
+                <!-- cuando es una cabecera. la etiqueta del elemento se llamada th -->
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>celular</th>
+                <th>correo</th>
+                <th>Echa De Nacimiento</th>
+            </tr>
+        </thead>
+        <!-- El cuerpo de la tabla va abajo del thead -->
+        <!-- el cuerpo de la tabla es el contenedor de los datos -->
+        <tbody>
+            <!-- al igual que thead tenia filas nuestro tbody tambien tiene filas-->
+            <tr>
+                <!-- los elementos que estan dentro una fila en el cuerpo de la tabla se llaman td -->
+                <td>Edgar</td>
+                <td>chavez</td>
+                <td>989404994</td>
+                <td>chavez@gmail.com</td>
+                <td>01/02/93</td>
+            </tr>
+            <!-- otra fila -->
+            <tr>
+                <td>lucas</td>
+                <td>gonzales</td>
+                <td>65522656</td>
+                <td>lucas@gmail.com</td>
+                <td>09/12/21</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>tabla de usurio con imagenes</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>foto</th>
+                <th>GitHub</th>
+                <th>PDF</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>juan</strong></td>
+                <td><i>perez</i></td>
+                <td><u>50</u></td>
+                <td>
+                    <img src="https://wl-genial.cf.tsp.li/resize/728x/jpg/91b/430/964a9c5ac9933cc012d0bd80be.jpg" 
+                     alt=""
+                     width="100"
+                    >
+                </td>
+                <td>
+                    <a href="https://www.github.com">link de github</a>
+                </td>
+                <td>
+                    <iframe src="../../files/Desafio_FullStack.pdf" frameborder="0"></iframe>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Rowspan y colspan</h2>
+    <!-- este concepto se basa en poder alterar la informacion de mi tabla y poder combinar columnas -->
+    <!-- table>thead>tr>th*4 -->
+    <!-- colspan sirve para poder ocupar de uno a mas espacios(valido solo para columnas) -->
+    <table border="1" >
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>correo</th>
+                <!-- este th vale 2 columnas y me sirva para dos datod -->
+                <th colspan="2" >Fto y Numero</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td colspan="2" >Juan</td>
+                
+                <td>25</td>
+                <td>juan@gmail.com</td>
+                <!-- estos dos ultimos td van a ser parte de foto y numero. por que tienen un colspan de 2 -->
+                <td><img src="../../imagenes/ferrari.png" width="200" height="100" alt=""></td>
+                <td>9999</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Rowspan</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>curso</th>
+                <th>nombre</th>
+                <th>Apellido</th>
+                <th>edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="3" >HTML</td>
+                <td>Juan</td>
+                <td>perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                
+                <td>Juan</td>
+                <td>perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                
+                <td>Juan</td>
+                <td>perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td rowspan="2" >PHP</td>
+                <td>Juan</td>
+                <td>perez</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                
+                <td>Juan</td>
+                <td>perez</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+</body>
+</html>
