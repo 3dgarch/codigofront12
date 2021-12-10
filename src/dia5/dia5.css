@@ -1,0 +1,105 @@
+/* QUE ES CSS? */
+/* para poder reflejado mis estilos en mi pagina web debo vincular mi archivo css en mi html */
+/* Es u motor de estilos muy potente */
+/* se acostubra a tener un estilo global para quitarle elpadding y margin a una pagina web */
+/* padding: es el espacio interno de un elemento */
+/* margin: es ele espacio externo de un elemento */
+
+
+/* Estilos Globales 
+para poder tener un estilo global para mi web debo usar **/
+
+/* se recomienda solomanejar el margin, padding y borderbox */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* que etiqueta debo usar si quiero aplicar un estilo a todo mi body */
+body {
+    /* font-family: es el atributo que me permite cambiar eltipo de letra */
+    /* para poder usar un tipode letra externo podemos descargarlo o usar un link de referencia */
+
+    font-family: "Gill Sans" , Helvetica;
+    background-color: chartreuse;
+}
+
+/*como aplicar estilo a una etiqueta especial */
+/* quiero que mi h1 se de color rojo */
+h1 {
+   /* color: es el color de los textos*/
+   color: red;
+   /* Background-color: es el color de fondo de un elemento */
+   background-color: aqua;
+   /* font-weight: esto para asignarle un peso a lasletras */
+   /* esta en el rango de 100-900, pero tambien lapropiedad bold es parael tecto negrita */
+
+   font-weight: bold;
+
+}
+
+
+
+section {
+    background-color: azure;
+    /* border: es una propiedad para poner un borde a un elemento. border recibe 3 cosas 
+    tamaño de pixel, color, solid*/
+    border: solid red 3px;
+}
+p{
+    text-align: justify;
+}
+/* como accder a un elemento hijo */
+section article p {
+    color: red;
+}
+article p {
+    /* text-align: permite poner el texto en  4 formas */
+
+    text-align: center;
+    font-size: 22px;
+}
+a {
+    color: crimson;
+    text-decoration: none ;
+
+}
+ul {
+    border: 2px solid blue;
+    text-align: right;
+}
+ul li {
+    /* le quita las viñetas a mi li */
+    list-style: none;
+    /* el display: es la propiedad en la que se puede mostrar un elemento */
+    display: inline;
+}
+
+div {
+    border: 5px;
+    text-align: center;
+}
+img {
+    width: 50%;
+    height: 300px;
+}
+
+/* para usar un Id en html usamos #+nombre del ID */
+#titulo {
+    color: darkkhaki;
+
+}
+#text__introduccion {
+    text-align: justify;
+}
+
+/* para poder repetir los identificadores se recomienda usar clases
+y para acceder a una clase usamos el . */
+.text__pagina {
+    color: brown ;
+}
+#logo {
+    width: 500px;
+    height: 85px;
+    border: 4px ;
+}

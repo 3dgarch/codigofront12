@@ -1,0 +1,22 @@
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+#contenedor{
+    background-color: cornflowerblue;
+    width: 50%;
+    padding: 10px;
+    border-radius: 12px;
+    
+}
+.img__principal {
+    border-radius: 10px;
+}
+.contenedor__secundario{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.image__avatar{
+    border:solid;
+    border-radius: 50%;
+}

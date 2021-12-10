@@ -1,0 +1,83 @@
+/* GLOBALES */
+
+body{
+    font-family: Arial;
+    color: white;
+    font-size: 13px;
+}
+
+h1{
+    font-size: 20px;
+}
+p{
+    font-size: 16px;
+}
+a{
+    color: inherit;
+}
+
+/* HEADER */
+.header{
+    background: red;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    font-size: 42px;
+}
+.header a {
+    text-decoration: none;
+}
+
+.header ul{
+    display: flex;
+}
+.header li {
+    margin-left: 10px;
+}
+
+/* MAIN */
+.main {
+    color: black;
+    display: flex;
+}
+.main aside {
+    background: chartreuse;
+    padding: 20px;
+    color: white;
+}
+.main aside li {
+    margin-bottom: 20px;
+}
+.main .main-section {
+    padding: 20px;
+}
+.main h1 {
+    margin-bottom: 20px;
+}
+.main p {
+    margin-bottom: 20px;
+}
+
+/* ARTICLE */
+.articles {
+    display: flex;
+}
+.aticles img{
+    width: 100%;
+}
+.articles article {
+    border: 3px solid black;
+    margin-right:  20px;
+}
+
+/* footer */
+
+footer {
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}

@@ -1,0 +1,80 @@
+/* globales */
+
+body{
+    font-size: 16px;
+    font-family: arial;
+
+}
+h2{
+    font-size: 25px;
+    color: #7D3C98;
+    
+}
+a{
+    text-decoration: none;
+}
+
+
+/* header */
+.header {
+    padding: 25px;
+    background: #9ECEFA;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header .logo{
+    font-size: 42px;
+    color: #7D3C98;
+}
+.header ul {
+    display: flex;
+}
+.header li{
+    margin-left: 20px;
+}
+
+/* section */
+
+.main h2{
+    margin-bottom: 20px;
+}
+.main p {
+    margin-bottom: 20px;
+}
+section{
+    padding: 20px;
+}
+section .nosotros{
+    display: flex;
+}
+section .servicios{
+    display: flex;
+}
+section .portafolio{
+    display: flex;
+    
+}
+
+    
+}
+section .contacto{
+    display: flex;
+    
+     
+}
+div .datos-per{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.footer{
+    background: #9ECEFA;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
